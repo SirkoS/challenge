@@ -1,0 +1,19 @@
+@prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:C22 a iop:Variable ;
+    rdfs:label "Current smoking status" ;
+    ex:issue "https://github.com/i-adopt/examples/issues/39" ;
+    iop:hasConstraint [ a iop:Constraint ;
+            rdfs:label "current" ;
+            iop:constrains ex:C22_Prop35 ] ;
+    iop:hasObjectOfInterest ex:C22_OoI35 ;
+    iop:hasProperty ex:C22_Prop35 .
+
+ex:C22_OoI35 a iop:Entity ;
+    rdfs:label "patient" .
+
+ex:C22_Prop35 a iop:Property ;
+    rdfs:label "smoking status" .
+

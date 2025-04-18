@@ -1,0 +1,24 @@
+@prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:C8 a iop:Variable ;
+    rdfs:label "Coarse woody debris abundance per hectare" ;
+    ex:issue "https://github.com/i-adopt/examples/issues/25" ;
+    iop:hasContextObject ex:C8_Context11 ;
+    iop:hasMatrix ex:C8_Matrix11 ;
+    iop:hasObjectOfInterest ex:C8_OoI11 ;
+    iop:hasProperty ex:C8_Prop11 .
+
+ex:C8_Context11 a iop:Entity ;
+    rdfs:label "forest" .
+
+ex:C8_Matrix11 a iop:Entity ;
+    rdfs:label "ground" .
+
+ex:C8_OoI11 a iop:Entity ;
+    rdfs:label "coarse woody debris" .
+
+ex:C8_Prop11 a iop:Property ;
+    rdfs:label "area fraction" .
+

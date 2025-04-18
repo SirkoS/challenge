@@ -1,0 +1,23 @@
+@prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:C20 a iop:Variable ;
+    rdfs:label "Concentration of DDT impacted by industry" ;
+    ex:issue "https://github.com/i-adopt/examples/issues/37" ;
+    iop:hasConstraint [ a iop:Constraint ;
+            rdfs:label "industry" ;
+            iop:constrains ex:C20_Matrix32 ] ;
+    iop:hasMatrix ex:C20_Matrix32 ;
+    iop:hasObjectOfInterest ex:C20_OoI32 ;
+    iop:hasProperty ex:C20_Prop32 .
+
+ex:C20_OoI32 a iop:Entity ;
+    rdfs:label "DDT" .
+
+ex:C20_Prop32 a iop:Property ;
+    rdfs:label "mass fraction" .
+
+ex:C20_Matrix32 a iop:Entity ;
+    rdfs:label "soil" .
+

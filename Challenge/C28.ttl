@@ -1,0 +1,26 @@
+@prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:C28 a iop:Variable ;
+    rdfs:label "Overnight stays in hotel" ;
+    ex:issue "https://github.com/i-adopt/examples/issues/45" ;
+    iop:hasConstraint [ a iop:Constraint ;
+            rdfs:label "near the sea shore" ;
+            iop:constrains ex:C28_Matrix41 ],
+        [ a iop:Constraint ;
+            rdfs:label "3 star" ;
+            iop:constrains ex:C28_Matrix41 ] ;
+    iop:hasMatrix ex:C28_Matrix41 ;
+    iop:hasObjectOfInterest ex:C28_OoI41 ;
+    iop:hasProperty ex:C28_Prop41 .
+
+ex:C28_OoI41 a iop:Entity ;
+    rdfs:label "overnight stay" .
+
+ex:C28_Prop41 a iop:Property ;
+    rdfs:label "count" .
+
+ex:C28_Matrix41 a iop:Entity ;
+    rdfs:label "hotel" .
+
