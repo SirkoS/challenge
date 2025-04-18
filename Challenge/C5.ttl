@@ -1,0 +1,23 @@
+@prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:C5 a iop:Variable ;
+    rdfs:label "Atmosphere_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol" ;
+    ex:issue "https://github.com/i-adopt/examples/issues/22" ;
+    iop:hasConstraint [ a iop:Constraint ;
+            rdfs:label "organic matter" ;
+            iop:constrains ex:C5_Prop6 ] ;
+    iop:hasMatrix ex:C5_Matrix6 ;
+    iop:hasObjectOfInterest ex:C5_OoI6 ;
+    iop:hasProperty ex:C5_Prop6 .
+
+ex:C5_Matrix6 a iop:Entity ;
+    rdfs:label "aerosol particle phase" .
+
+ex:C5_OoI6 a iop:Entity ;
+    rdfs:label "air" .
+
+ex:C5_Prop6 a iop:Property ;
+    rdfs:label "optical depth" .
+

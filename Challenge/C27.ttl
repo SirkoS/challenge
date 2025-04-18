@@ -1,0 +1,20 @@
+@prefix ex: <http://example.org/iadopt/challenge/> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:C27 a iop:Variable ;
+    rdfs:label "Concentration of isobutylene" ;
+    ex:issue "https://github.com/i-adopt/examples/issues/44" ;
+    iop:hasMatrix ex:C27_Matrix40 ;
+    iop:hasObjectOfInterest ex:C27_OoI40 ;
+    iop:hasProperty ex:C27_Prop40 .
+
+ex:C27_Matrix40 a iop:Entity ;
+    rdfs:label "chloroform" .
+
+ex:C27_OoI40 a iop:Entity ;
+    rdfs:label "isobutylene" .
+
+ex:C27_Prop40 a iop:Property ;
+    rdfs:label "mass concentration" .
+
