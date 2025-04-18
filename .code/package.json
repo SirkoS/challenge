@@ -11,9 +11,9 @@
   "author": "Sirko Schindler",
   "license": "MIT",
   "dependencies": {
-    "@comunica/query-sparql-rdfjs": "^4.0.2",
+    "@comunica/query-sparql-rdfjs": "^4.1.0",
     "mustache": "^4.2.0",
-    "n3": "^1.22.3",
+    "n3": "^1.25.1",
     "rdfxml-streaming-parser": "^2.4.0"
   }
 }

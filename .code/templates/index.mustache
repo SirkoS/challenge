@@ -8,8 +8,8 @@
 </head>
 <body>
   <header>
-    <h1>I-ADOPT Variable Examples</h1>
-    <p>Your resource for modelled I-ADOPT variables with concepts from different terminologies.</p>
+    <h1>I-ADOPT Variable Modelling Challenge</h1>
+    <p>Current state of canonical solutions.</p>
 
     <input type="text" placeholder="Filter Variables ..." id="filter" autocomplete="off" />
     <script src="./script.js"></script>
@@ -23,7 +23,7 @@
           {{#entries}}
             <li class="variable-item">
               <article>
-                <h3><a href="{{details}}">{{variable.label}}</a></h3>
+                <h3><a href="{{details}}">{{label}}</a></h3>
                 <p>{{{variable.comment}}}</p>
                 <a href="{{download}}" class="download" title="Download RDF">
                   <img src="rdf.svg" alt="Download RDF">
@@ -37,7 +37,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2024 I-ADOPT. All rights reserved.</p>
+    <p>&copy; 2025 I-ADOPT. All rights reserved.</p>
   </footer>
 </body>
 </html>

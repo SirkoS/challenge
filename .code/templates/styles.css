@@ -7,6 +7,10 @@ dt {
   font-weight: bold;
 }
 
+dd dt {
+  font-weight: normal;
+}
+
 .download {
   margin-left: 1.2em;
 }
@@ -29,14 +33,13 @@ body {
   color: #333;
   line-height: 1.6;
   display: grid;
-  grid-template-rows: 190px calc( 100% - 250px ) 60px;
+  grid-template-rows: 150px calc( 100% - 210px ) 60px;
   grid-template-areas: "top" "center" "bottom";
 }
 
 header {
   background-color: #333;
   color: #fff;
-  padding: 20px;
   text-align: center;
   grid-area: top;
 }

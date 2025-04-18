@@ -11,16 +11,13 @@ export async function parseRDF( content ) {
   try {
 
     // first attempt: N3 (Turtle, TriG, N-Triples, N-Quads, RDF* and Notation3 (N3))
-    const result = await parseRDFN3( content );
-    return result;
+    return parseRDFN3( content );
 
   } catch (e) {
-    console.log(e);
     try {
 
       // second attempt: RDF/XML
-      const result = await parseRDFXML( content );
-      return result;
+      return parseRDFXML( content );
 
     } catch {
       throw Exception( 'Unable to parse file content' );
@@ -30,11 +27,17 @@ export async function parseRDF( content ) {
 }
 
 
+/**
+ * @typedef  {Object} ParseResponse
+ * @property {N3.Store}                 store     store holding graph data
+ * @property {Object.<string, string>}  prefixes  map of prefixes
+ */
+
 
 /**
  * parse a given RDF-string into a graph store using N3 parser
  * @param   {String}              content  RDF-compliant data
- * @returns {Promise.<N3.Store>}           N3-store with parsed data
+ * @returns {Promise.<ParseResponse>}      parsed data
  */
 function parseRDFN3( content ) {
   return new Promise( (resolve, reject) => {
@@ -58,7 +61,7 @@ function parseRDFN3( content ) {
                         N3.DataFactory.defaultGraph()
                       ) );
                     } else {
-                      resolve( store );
+                      resolve({ store, prefixes });
                     }
 
                   });
@@ -70,7 +73,7 @@ function parseRDFN3( content ) {
 /**
  * parse a given RDF-string into a graph store using RDF/XML parser
  * @param   {String}              content  RDF-compliant data
- * @returns {Promise.<N3.Store>}           N3-store with parsed data
+ * @returns {Promise.<ParseResponse>}           N3-store with parsed data
  */
 function parseRDFXML( content ) {
   return new Promise( (resolve, reject) => {
@@ -83,7 +86,8 @@ function parseRDFXML( content ) {
     parser
       .on( 'error', reject )
       .on( 'data', (quad) => store.add( quad ) )
-      .on( 'end', () => resolve( store ) );
+      // TODO integrate prefixes
+      .on( 'end', () => resolve({ store, prefixes: {} }) );
 
     // pipe content
     parser.write( content );
