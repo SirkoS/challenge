@@ -1,33 +1,24 @@
-/** @type { import("eslint").Linter.Config } */
-export default [{
-  'rules': {
-    'indent': [
-      'warn',
-      2,
-      {
-        'VariableDeclarator': { 'var': 2, 'let': 2, 'const': 3 },
-        'SwitchCase': 1,
-        'MemberExpression': 1,
-        'CallExpression': { 'arguments': 'first' },
-        'ArrayExpression': 'first',
-        'ObjectExpression': 'first',
-        'ignoredNodes': ['ConditionalExpression']
-      },
-    ],
-    'quotes': [
-      'warn',
-      'single'
-    ],
-    'semi': [
-      'warn',
-      'always'
-    ],
-    'no-console': [
-      'warn',
-      { allow: ['warn', 'error'] }
-    ],
-    'no-trailing-spaces': [
-      'warn'
-    ]
-  }
-}];
+import js from '@eslint/js';
+import { includeIgnoreFile } from '@eslint/compat';
+import svelte from 'eslint-plugin-svelte';
+import globals from 'globals';
+import { fileURLToPath } from 'node:url';
+import svelteConfig from './svelte.config.js';
+
+const gitignorePath = fileURLToPath(new URL('./.gitignore', import.meta.url));
+
+/** @type {import('eslint').Linter.Config[]} */
+export default [
+	includeIgnoreFile(gitignorePath),
+	js.configs.recommended,
+	...svelte.configs.recommended,
+	{
+		languageOptions: {
+			globals: { ...globals.browser, ...globals.node }
+		}
+	},
+	{
+		files: ['**/*.svelte', '**/*.svelte.js'],
+		languageOptions: { parserOptions: { svelteConfig } }
+	}
+];

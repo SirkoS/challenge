@@ -4,7 +4,7 @@ import {RdfXmlParser} from 'rdfxml-streaming-parser';
 /**
  * parse a given RDF-string into a graph store
  * @param   {String}              content  RDF-compliant data
- * @returns {Promise.<N3.Store>}           N3-store with parsed data
+ * @returns {Promise.<{store: N3.Store, prefixes: Object<string, string>}>}           N3-store with parsed data
  */
 export async function parseRDF( content ) {
 
