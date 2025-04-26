@@ -4,6 +4,7 @@
 
 ex:C29 a iop:Variable ;
     rdfs:label "Nervosity feelings I" ;
+    rdfs:comment "In the past 30 days, how often did you feel nervous?" ;
     ex:issue "https://github.com/i-adopt/examples/issues/46" ;
     iop:hasConstraint [ a iop:Constraint ;
             rdfs:label "last 30 days" ;

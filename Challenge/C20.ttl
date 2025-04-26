@@ -4,6 +4,7 @@
 
 ex:C20 a iop:Variable ;
     rdfs:label "Concentration of DDT impacted by industry" ;
+    rdfs:comment "Concentration of DDT in a given year at a site impacted by industry." ;
     ex:issue "https://github.com/i-adopt/examples/issues/37" ;
     iop:hasConstraint [ a iop:Constraint ;
             rdfs:label "industry" ;

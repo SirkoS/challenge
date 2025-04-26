@@ -4,6 +4,7 @@
 
 ex:C21 a iop:Variable ;
     rdfs:label "Blood pressure" ;
+    rdfs:comment "Resting blood pressure systolic/diastolic in millimeters of mercury (mmHg)" ;
     ex:issue "https://github.com/i-adopt/examples/issues/38" ;
     iop:hasConstraint [ a iop:Constraint ;
             rdfs:label "resting" ;

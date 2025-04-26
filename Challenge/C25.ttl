@@ -4,6 +4,7 @@
 
 ex:C25 a iop:Variable ;
     rdfs:label "Dynamic shear viscosity of polystyrene PS042" ;
+    rdfs:comment "Dynamic shear viscosity of polystyrene PS042 under the testing conditions of DIN 51810-1." ;
     ex:issue "https://github.com/i-adopt/examples/issues/42" ;
     iop:hasObjectOfInterest ex:C25_OoI38 ;
     iop:hasProperty ex:C25_Prop38 .

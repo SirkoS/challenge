@@ -4,6 +4,7 @@
 
 ex:C1 a iop:Variable ;
     rdfs:label "Electron density in the solar wind" ;
+    rdfs:comment "Density (particle per cm3) of electrons measured in the Solar Wind." ;
     ex:issue "https://github.com/i-adopt/examples/issues/18" ;
     iop:hasMatrix ex:C1_Matrix0 ;
     iop:hasObjectOfInterest ex:C1_OoI0 ;

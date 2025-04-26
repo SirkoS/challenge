@@ -4,6 +4,7 @@
 
 ex:C11 a iop:Variable ;
     rdfs:label "Strike of bedding" ;
+    rdfs:comment "Geographic azimuth (relative to true north) at a point observation location, of a horizontal line contained in a sedimentary rock bedding surface. The bedding surface must not be horizontal; the azimuth is reported such that the dip direction of the inclined bedding is to the right when facing in the azimuth direction." ;
     ex:issue "https://github.com/i-adopt/examples/issues/28" ;
     iop:hasMatrix ex:C11_Matrix14 ;
     iop:hasObjectOfInterest ex:C11_OoI14 ;

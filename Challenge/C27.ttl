@@ -4,6 +4,7 @@
 
 ex:C27 a iop:Variable ;
     rdfs:label "Concentration of isobutylene" ;
+    rdfs:comment "Mass concentration of isobutylene in chloroform." ;
     ex:issue "https://github.com/i-adopt/examples/issues/44" ;
     iop:hasMatrix ex:C27_Matrix40 ;
     iop:hasObjectOfInterest ex:C27_OoI40 ;

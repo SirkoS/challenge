@@ -4,6 +4,7 @@
 
 ex:C2 a iop:Variable ;
     rdfs:label "Air daily maximum temperature" ;
+    rdfs:comment "Temperature of the air in a height of 1.7 meter, daily maximum" ;
     ex:issue "https://github.com/i-adopt/examples/issues/19" ;
     iop:hasConstraint [ a iop:Constraint ;
             rdfs:label "daily" ;

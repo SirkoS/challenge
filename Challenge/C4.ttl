@@ -4,6 +4,7 @@
 
 ex:C4 a iop:Variable ;
     rdfs:label "Atmospheric boundary layer height due to temperature inversion" ;
+    rdfs:comment "Identification of height-range above valley floor influenced by temperature inversion" ;
     ex:issue "https://github.com/i-adopt/examples/issues/21" ;
     iop:hasConstraint [ a iop:Constraint ;
             rdfs:label "relative to the lower boundary height" ;

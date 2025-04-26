@@ -4,6 +4,7 @@
 
 ex:C23 a iop:Variable ;
     rdfs:label "dose of applied nanomaterial internalised by a specific cell population (or per single cell) -mass per cell area" ;
+    rdfs:comment "Correlation of dose and response for nanomaterials toxicity assessment requires information on the amount of the applied dose of nanomaterial that has been internalised by a cell population (or per specific cell) and is dependent on a number of factors including the exposure time, the particle density (i.e., whether settling occurs and thus the distribution of particles in the medium is non-homogeneous affecting the local concentration at the cell surface) etc." ;
     ex:issue "https://github.com/i-adopt/examples/issues/40" ;
     iop:hasConstraint [ a iop:Constraint ;
             rdfs:label "internalised" ;

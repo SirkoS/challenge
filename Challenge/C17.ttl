@@ -4,6 +4,7 @@
 
 ex:C17 a iop:Variable ;
     rdfs:label "Docosahexaenoic acid content per dry weight (DHA content/ C22:6 n-3 content)" ;
+    rdfs:comment "The amount of docosahexaenoic acid relative to dry weight in an individual." ;
     ex:issue "https://github.com/i-adopt/examples/issues/34" ;
     iop:hasConstraint [ a iop:Constraint ;
             rdfs:label "dry" ;
