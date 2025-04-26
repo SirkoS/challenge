@@ -108,13 +108,10 @@
     ></iframe>
     <script>
       function updateVisSize( ev ) {
-        console.log( ev );
         // set the proper iframe ratio
         const iframe = document.querySelector( 'iframe' );
         const ratio = ev.data.width / ev.data.height;
-        console.log( ratio );
         iframe.style.aspectRatio = ratio;
-        console.log( iframe.getComputedStyle().get( 'aspect-ratio' ) )
         // remove the listener
         window.removeEventListener( 'message', updateVisSize );
       }
