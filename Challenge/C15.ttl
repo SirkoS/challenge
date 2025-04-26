@@ -4,6 +4,7 @@
 
 ex:C15 a iop:Variable ;
     rdfs:label "Foraminifera, planktic, size" ;
+    rdfs:comment "Size of planktic foraminifers in surface sediments, see https://doi.pangaea.de/10.1594/PANGAEA.126730" ;
     ex:issue "https://github.com/i-adopt/examples/issues/32" ;
     iop:hasConstraint [ a iop:Constraint ;
             rdfs:label "planctonic" ;

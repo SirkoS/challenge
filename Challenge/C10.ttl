@@ -4,6 +4,7 @@
 
 ex:C10 a iop:Variable ;
     rdfs:label "Peak ground acceleration" ;
+    rdfs:comment "Peak acceleration measured on the earth surface when facing seismic events, like earthquakes." ;
     ex:issue "https://github.com/i-adopt/examples/issues/27" ;
     iop:hasConstraint [ a iop:Constraint ;
             rdfs:label "surface" ;

@@ -4,6 +4,7 @@
 
 ex:C26 a iop:Variable ;
     rdfs:label "Sheet resistance of layer of gold" ;
+    rdfs:comment "The sheet resistance of a 5-nanometer-thick layer of gold." ;
     ex:issue "https://github.com/i-adopt/examples/issues/43" ;
     iop:hasConstraint [ a iop:Constraint ;
             rdfs:label "5 nm thick" ;

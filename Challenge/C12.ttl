@@ -4,6 +4,7 @@
 
 ex:C12 a iop:Variable ;
     rdfs:label "Probablity of occurence of habitat" ;
+    rdfs:comment "Part of terrestrial Ecosystem distribution of terrestrial EUNIS Habitats EBV, probability of occurrence of EUNIS habitats within contiguous spatial units (grid cells of 100x100 m) across the EU over 1 year time. https://github.com/EuropaBON/EBV-Descriptions/wiki/Terrestrial-Ecosystem-distribution-of-terrestrial-EUNIS-Habitats" ;
     ex:issue "https://github.com/i-adopt/examples/issues/29" ;
     iop:hasConstraint [ a iop:Constraint ;
             rdfs:label "EUNIS type" ;

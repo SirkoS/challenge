@@ -4,6 +4,7 @@
 
 ex:C30 a iop:Variable ;
     rdfs:label "Date of last PCR-test" ;
+    rdfs:comment "date of last COVID-19 PCR test performed by a certified laboratory" ;
     ex:issue "https://github.com/i-adopt/examples/issues/47" ;
     iop:hasConstraint [ a iop:Constraint ;
             rdfs:label "last" ;

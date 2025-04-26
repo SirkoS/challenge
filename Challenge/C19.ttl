@@ -4,6 +4,7 @@
 
 ex:C19 a iop:Variable ;
     rdfs:label "Weight specific-ingestion Carbon rate at 15 °C" ;
+    rdfs:comment "The amount of carbon consumed by an organism at non-limiting concentration of food relative to the individual dry weight measured at 15°C. It is expressed as μg C mg DW−1 h−1" ;
     ex:issue "https://github.com/i-adopt/examples/issues/36" ;
     iop:hasConstraint [ a iop:Constraint ;
             rdfs:label "weight-specific" ;

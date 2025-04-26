@@ -4,6 +4,7 @@
 
 ex:C9 a iop:Variable ;
     rdfs:label "Foliage projective cover in the lower canopy strata" ;
+    rdfs:comment "The proportion of the ground area covered by foliage (or photosynthetic tissue) held in a vertical plane. Foliage Projective Cover is usually expressed as the percentage of ground covered by foliage and can be separated according to vegetation strata." ;
     ex:issue "https://github.com/i-adopt/examples/issues/26" ;
     iop:hasConstraint [ a iop:Constraint ;
             rdfs:label "lower canopy strata" ;

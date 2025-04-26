@@ -4,6 +4,7 @@
 
 ex:C13 a iop:Variable ;
     rdfs:label "Distance to nearest neighbour habitat patch" ;
+    rdfs:comment "This variable is part of the EBV Connectivity of terrestrial ecosystem habitat types and helps to measure the degree of connection of EUNIS habitats within a landscape, in terms of their spatial distribution. https://github.com/EuropaBON/EBV-Descriptions/wiki/Terrestrial-Connectivity-of-terrestrial-ecosystem-habitat-types" ;
     ex:issue "https://github.com/i-adopt/examples/issues/30" ;
     iop:hasConstraint [ a iop:Constraint ;
             rdfs:label "nearest neighbour" ;

@@ -4,6 +4,7 @@
 
 ex:C18 a iop:Variable ;
     rdfs:label "Biological sex" ;
+    rdfs:comment "Biological sex [female | male | intersex | unknown]" ;
     ex:issue "https://github.com/i-adopt/examples/issues/35" ;
     iop:hasObjectOfInterest ex:C18_OoI27 ;
     iop:hasProperty ex:C18_Prop27 .

@@ -4,6 +4,7 @@
 
 ex:C28 a iop:Variable ;
     rdfs:label "Overnight stays in hotel" ;
+    rdfs:comment "Number of nights in a 3-star hotel near the sea shore" ;
     ex:issue "https://github.com/i-adopt/examples/issues/45" ;
     iop:hasConstraint [ a iop:Constraint ;
             rdfs:label "near the sea shore" ;
