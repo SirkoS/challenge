@@ -36,10 +36,10 @@ export class Concept {
    *
    * @param {object}    p
    * @param {string}    p.iri
-   * @param {string?}    p.shortIri
-   * @param {Localized|string?} p.label
-   * @param {Localized|string?} p.comment
-   * @param {boolean?}   p.isBlank
+   * @param {string?}   p.shortIri
+   * @param {Localized} p.label
+   * @param {Localized} p.comment
+   * @param {boolean}   p.isBlank
    */
   constructor({ iri, shortIri, label, comment, isBlank } = {}) {
     this._iri      = iri;
@@ -592,6 +592,27 @@ export class Entity extends Concept {
 ]`;
   }
 
+  /**
+   * provide a copy of this Entity
+   */
+  clone() {
+    const dupe = new Entity({
+      iri:      this._iri,
+      shortIri: this._shortIri,
+      label:    this._label,
+      comment:  this._comment,
+      isBlank:  this._isBlank,
+    });
+    for( const constraint of this.#constrained ) {
+      dupe._addConstraint( constraint );
+    }
+    for( const key in this.#systemComponents ) {
+      for( const component of this.#systemComponents[ key ] ) {
+        dupe.addComponent( key, component.clone() );
+      }
+    }
+    return dupe;
+  }
 }
 
 
