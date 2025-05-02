@@ -3,7 +3,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 ex:C5 a iop:Variable ;
-    rdfs:label "Atmosphere_optical_thickness_due_to_particulate_organic_matter_ambient_aerosol" ;
+    rdfs:label "Atmosphere optical thickness due to particulate organic matter ambient aerosol" ;
     ex:issue "https://github.com/i-adopt/examples/issues/22" ;
     iop:hasConstraint [ a iop:Constraint ;
             rdfs:label "organic matter" ;
