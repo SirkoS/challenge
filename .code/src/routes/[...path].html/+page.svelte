@@ -1,10 +1,15 @@
 <script>
   import { Entity } from "$lib/util/model/models";
   import parse from "$lib/util/model/parseJSONLD";
+  import DetailsNav from "./DetailsNav.svelte";
 
   let { data } = $props();
   const variable = parse( data.variable );
 </script>
+
+<nav>
+  <DetailsNav selected={data.path} variables={data.variableList}/>
+</nav>
 
 {#snippet subsection(/** @type {Entity} */ entity)}
   {#if entity}

@@ -17,7 +17,7 @@ while( (pathComponents.length > 0) && (pathComponents.pop() != '.code' ) ) {}
 export const PATH_ROOT = pathComponents.join( Path.sep );
 
 
-type VariableList = {
+export type VariableList = {
   title:    string,
   path:     string,
   section:  string,
@@ -47,7 +47,7 @@ export async function getVariables() : Promise<{ [index: string]: Array<Variable
     const entry = {
       title:    variable.getLabel(),
       comment:  variable.getComment(),
-      path:     rawFilePath,
+      path:     rawFilePath.replace( /\\/g, '/' ),  // use canonical web paths
       section:  Path.dirname( rawFilePath ),
     };
     if( !(entry.section in variables) ) {

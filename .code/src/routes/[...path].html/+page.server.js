@@ -1,4 +1,4 @@
-import { getVariable } from '$lib/store/variable.js';
+import { getVariable, getVariables } from '$lib/store/variable.js';
 import toJSONLD from '$lib/util/model/toJSONLD';
 
 export async function load({ params }) {
@@ -8,9 +8,10 @@ export async function load({ params }) {
 
   // pass everything on
   return {
-    path:     params.path,
-    variable: toJSONLD( variable ),
-    issue:    variable.issue,
+    path:         params.path,
+    variable:     toJSONLD( variable ),
+    issue:        variable.issue,
+    variableList: await getVariables(),
   };
 
 };
