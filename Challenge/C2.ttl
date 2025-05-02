@@ -1,4 +1,4 @@
-@prefix ex: <http://example.org/iadopt/challenge/> .
+         @prefix ex: <http://example.org/iadopt/challenge/> .
 @prefix iop: <https://w3id.org/iadopt/ont/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
@@ -12,17 +12,14 @@ ex:C2 a iop:Variable ;
         [ a iop:Constraint ;
             rdfs:label "1,7 m aboveground" ;
             iop:constrains ex:C2_OoI1 ] ;
-    iop:hasContextObject ex:C2_Context1 ;
     iop:hasMatrix ex:C2_Matrix1 ;
     iop:hasObjectOfInterest ex:C2_OoI1 ;
     iop:hasProperty ex:C2_Prop1 ;
     iop:hasStatisticalModifier ex:C2_Mod1 .
 
-ex:C2_Context1 a iop:Entity ;
-    rdfs:label "atmosphere" .
 
 ex:C2_Matrix1 a iop:Entity ;
-    rdfs:label "atmospheric state" .
+    rdfs:label "atmosphere" .
 
 ex:C2_Prop1 a iop:Property ;
     rdfs:label "temperature" .
