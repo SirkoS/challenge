@@ -17,5 +17,5 @@ ex:C1_OoI0 a iop:Entity ;
     rdfs:label "electron" .
 
 ex:C1_Prop0 a iop:Property ;
-    rdfs:label "number density" .
+    rdfs:label "volumetric number density" .
 
