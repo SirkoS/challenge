@@ -3,8 +3,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 ex:C21 a iop:Variable ;
-    rdfs:label "Blood pressure" ;
-    rdfs:comment "Resting blood pressure systolic/diastolic in millimeters of mercury (mmHg)" ;
+    rdfs:label "Resting systolic blood pressure" ;
+    rdfs:comment "Resting blood pressure systolic in millimeters of mercury (mmHg)" ;
     ex:issue "https://github.com/i-adopt/examples/issues/38" ;
     iop:hasConstraint [ a iop:Constraint ;
             rdfs:label "resting" ;
