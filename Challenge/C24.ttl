@@ -18,7 +18,7 @@ ex:C24_Matrix37 a iop:Entity ;
     rdfs:label "cell surface" .
 
 ex:C24_OoI37 a iop:Entity ;
-    rdfs:label "nanomaterial" .
+    rdfs:label "nanomaterial particle" .
 
 ex:C24_Prop37 a iop:Property ;
     rdfs:label "number per area" .
