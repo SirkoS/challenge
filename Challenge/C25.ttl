@@ -8,7 +8,7 @@ ex:C25 a iop:Variable ;
     ex:issue "https://github.com/i-adopt/examples/issues/42" ;
     iop:hasConstraint [ a iop:Constraint ;
             rdfs:label "dynamic" ;
-            iop:constrains ex:ex:C25_Prop38 ] ;
+            iop:constrains ex:C25_Prop38 ] ;
     iop:hasObjectOfInterest ex:C25_OoI38 ;
     iop:hasProperty ex:C25_Prop38 .
 
