@@ -26,7 +26,7 @@ ex:C19_OoI28 a iop:Entity ;
     rdfs:label "Carbon" .
 
 ex:C19_Matrix28 a iop:Entity ;
-    rdfs:label "body" .
+    rdfs:label "organism" .
 
 ex:C19_Prop28 a iop:Property ;
     rdfs:label "mass flow rate" .
