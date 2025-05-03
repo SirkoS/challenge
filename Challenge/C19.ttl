@@ -13,6 +13,9 @@ ex:C19 a iop:Variable ;
             rdfs:label "dry" ;
             iop:constrains ex:C19_Matrix28 ],
         [ a iop:Constraint ;
+            rdfs:label "at non-limiting conditions" ;
+            iop:constrains ex:C19_OoI28 ],
+        [ a iop:Constraint ;
             rdfs:label "at 15°C temperature" ;
             iop:constrains ex:C19_Prop28 ],
         [ a iop:Constraint ;
