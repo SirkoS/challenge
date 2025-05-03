@@ -7,7 +7,7 @@ ex:C29 a iop:Variable ;
     rdfs:comment "In the past 30 days, how often did you feel nervous?" ;
     ex:issue "https://github.com/i-adopt/examples/issues/46" ;
     iop:hasConstraint [ a iop:Constraint ;
-            rdfs:label "last 30 days" ;
+            rdfs:label "during last 30 days" ;
             iop:constrains ex:C29_Prop43 ] ;
     iop:hasMatrix ex:C29_Matrix43 ;
     iop:hasObjectOfInterest ex:C29_OoI43 ;
