@@ -25,7 +25,7 @@ ex:C2_Prop1 a iop:Property ;
     rdfs:label "temperature" .
 
 ex:C2_Mod1 a iop:StatisticalModifier ;
-    rdfs:label "Maximum" .
+    rdfs:label "maximum" .
 
 ex:C2_OoI1 a iop:Entity ;
     rdfs:label "air" .
