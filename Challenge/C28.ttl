@@ -3,7 +3,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 ex:C28 a iop:Variable ;
-    rdfs:label "Overnight stays in hotel" ;
+    rdfs:label "Overnight stays in 3-star hotel near the sea shore" ;
     rdfs:comment "Number of nights in a 3-star hotel near the sea shore" ;
     ex:issue "https://github.com/i-adopt/examples/issues/45" ;
     iop:hasConstraint [ a iop:Constraint ;
