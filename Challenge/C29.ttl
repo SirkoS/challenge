@@ -3,7 +3,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 ex:C29 a iop:Variable ;
-    rdfs:label "Nervosity feelings I" ;
+    rdfs:label "Nervosity feelings" ;
     rdfs:comment "In the past 30 days, how often did you feel nervous?" ;
     ex:issue "https://github.com/i-adopt/examples/issues/46" ;
     iop:hasConstraint [ a iop:Constraint ;
