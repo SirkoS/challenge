@@ -8,20 +8,16 @@ ex:C23 a iop:Variable ;
     ex:issue "https://github.com/i-adopt/examples/issues/40" ;
     iop:hasConstraint [ a iop:Constraint ;
             rdfs:label "internalised" ;
-            iop:constrains ex:C23_Prop36 ] ;
-    iop:hasContextObject ex:C23_Context36 ;
+            iop:constrains ex:C23_OoI36 ] ;
     iop:hasMatrix ex:C23_Matrix36 ;
     iop:hasObjectOfInterest ex:C23_OoI36 ;
     iop:hasProperty ex:C23_Prop36 .
 
-ex:C23_Context36 a iop:Entity ;
-    rdfs:label "human" .
-
 ex:C23_Matrix36 a iop:Entity ;
-    rdfs:label "cell" .
+    rdfs:label "cell surface" .
 
 ex:C23_OoI36 a iop:Entity ;
-    rdfs:label "nanomaterial" .
+    rdfs:label "nanomaterial particle" .
 
 ex:C23_Prop36 a iop:Property ;
     rdfs:label "mass per area" .
