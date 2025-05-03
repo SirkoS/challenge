@@ -8,7 +8,10 @@ ex:C15 a iop:Variable ;
     ex:issue "https://github.com/i-adopt/examples/issues/32" ;
     iop:hasConstraint [ a iop:Constraint ;
             rdfs:label "planctonic" ;
-            iop:constrains ex:C15_OoI21 ] ;
+            iop:constrains ex:C15_OoI21 ],
+                 [ a iop:Constraint ;
+            rdfs:label "surface" ;
+            iop:constrains ex:C15_Matrix21 ];
     iop:hasMatrix ex:C15_Matrix21 ;
     iop:hasObjectOfInterest ex:C15_OoI21 ;
     iop:hasProperty ex:C15_Prop21 .
