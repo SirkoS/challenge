@@ -8,17 +8,14 @@ ex:C24 a iop:Variable ;
     ex:issue "https://github.com/i-adopt/examples/issues/41" ;
     iop:hasConstraint [ a iop:Constraint ;
             rdfs:label "internalised" ;
-            iop:constrains ex:C24_Prop37 ] ;
-    iop:hasContextObject ex:C24_Context37 ;
+            iop:constrains ex:C24_OoI37 ] ;
     iop:hasMatrix ex:C24_Matrix37 ;
     iop:hasObjectOfInterest ex:C24_OoI37 ;
     iop:hasProperty ex:C24_Prop37 .
 
-ex:C24_Context37 a iop:Entity ;
-    rdfs:label "human" .
 
 ex:C24_Matrix37 a iop:Entity ;
-    rdfs:label "cell" .
+    rdfs:label "cell surface" .
 
 ex:C24_OoI37 a iop:Entity ;
     rdfs:label "nanomaterial" .
