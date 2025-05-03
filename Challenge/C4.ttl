@@ -8,7 +8,10 @@ ex:C4 a iop:Variable ;
     ex:issue "https://github.com/i-adopt/examples/issues/21" ;
     iop:hasConstraint    [ a iop:Constraint ;
             rdfs:label "defined by temperature inversion" ;
-            iop:constrains ex:C4_OoI4 ] ;
+            iop:constrains ex:C4_OoI4 ],
+                   [ a iop:Constraint ;
+            rdfs:label "above the valley floor" ;
+            iop:constrains ex:C4_Prop4 ] ;
     iop:hasMatrix ex:C4_Matrix4 ;
     iop:hasObjectOfInterest ex:C4_OoI4 ;
     iop:hasProperty ex:C4_Prop4 .
