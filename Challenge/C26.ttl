@@ -8,8 +8,7 @@ ex:C26 a iop:Variable ;
     ex:issue "https://github.com/i-adopt/examples/issues/43" ;
     iop:hasConstraint [ a iop:Constraint ;
             rdfs:label "5 nm thick" ;
-            iop:constrains ex:C26_Matrix39 ] ;
-    iop:hasMatrix ex:C26_Matrix39 ;
+            iop:constrains ex:C26_OoI39 ] ;
     iop:hasObjectOfInterest ex:C26_OoI39 ;
     iop:hasProperty ex:C26_Prop39 .
 
@@ -19,6 +18,4 @@ ex:C26_OoI39 a iop:Entity ;
 ex:C26_Prop39 a iop:Property ;
     rdfs:label "sheet resistance" .
 
-ex:C26_Matrix39 a iop:Entity ;
-    rdfs:label "layer" .
 
