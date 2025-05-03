@@ -29,5 +29,5 @@ ex:C16_Prop22 a iop:Property ;
     rdfs:label "mass flow rate" .
 
 ex:C16_Matrix22 a iop:Entity ;
-    rdfs:label "body" .
+    rdfs:label "organism" .
 
