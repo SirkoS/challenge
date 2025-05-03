@@ -3,8 +3,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 ex:C5 a iop:Variable ;
-    rdfs:label "Atmosphere optical thickness due to particulate organic matter ambient aerosol" ;
-    rdfs:comment "Atmospheric optical thickness due to particulate organic matter at 550nm under ambient conditions." ;
+    rdfs:label "Atmosphere optical thickness of particulate organic matter ambient aerosol" ;
+    rdfs:comment "Atmospheric optical thickness of particulate organic matter at 550nm under ambient conditions." ;
     ex:issue "https://github.com/i-adopt/examples/issues/22" ;
     iop:hasConstraint [ a iop:Constraint ;
             rdfs:label "at 550nm wavelength" ;
