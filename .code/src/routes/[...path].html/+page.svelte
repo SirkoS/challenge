@@ -88,7 +88,7 @@
       <p class="description">{variable.getComment()}</p>
     </section>
 
-    <section>
+    <section class="textual">
       <dl>
 
         <dt>Property</dt>
@@ -149,11 +149,22 @@ main {
 
 main > div {
   display: inline-block;
+  text-align: center;
+
+  max-width: 1024px;
+}
+
+main > div section {
   text-align: left;
+}
+
+.textual {
+  display: inline-block;
 }
 
 h2 {
   margin-bottom: 0;
+  text-align: center;
 }
 
 .links {
