@@ -8,14 +8,14 @@ ex:C6 a iop:Variable ;
     ex:issue "https://github.com/i-adopt/examples/issues/23" ;
     iop:hasConstraint [ a iop:Constraint ;
             rdfs:label "due to senescence" ;
-            iop:constrains ex:C6_Matrix_SysA7 ] ;
+            iop:constrains ex:C6_Prop7 ] ;
     iop:hasMatrix ex:C6_Matrix7 ;
     iop:hasObjectOfInterest ex:C6_OoI7 ;
     iop:hasProperty ex:C6_Prop7 .
 
 ex:C6_Matrix7 a iop:Entity,
         iop:System ;
-    rdfs:label "vegetation-soil system" ;
+    rdfs:label "from vegetation to soil" ;
     iop:hasSource ex:C6_Matrix_SysA7 ;
     iop:hasTarget ex:C6_Matrix_SysB7 .
 
