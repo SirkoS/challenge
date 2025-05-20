@@ -16,7 +16,7 @@ ex:C13_Prop18 a iop:Property ;
     rdfs:label "distance" .
 
 ex:C13_OoI18 a iop:Entity,
-            iop:System, iadopt:AsymmetricSystem ;
+            iop:System, iop:AsymmetricSystem ;
     rdfs:label "habitat patch system" ;
     iop:hasSource ex:C13_OoI18_part1 ;
     iop:hasTarget ex:C13_OoI18_part2 .
