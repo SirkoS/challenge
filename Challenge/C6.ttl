@@ -14,7 +14,7 @@ ex:C6 a iop:Variable ;
     iop:hasProperty ex:C6_Prop7 .
 
 ex:C6_Matrix7 a iop:Entity,
-        iop:System, iadopt:AsymmetricSystem ;
+        iop:System, iop:AsymmetricSystem ;
     rdfs:label "from vegetation to soil" ;
     iop:hasSource ex:C6_Matrix_SysA7 ;
     iop:hasTarget ex:C6_Matrix_SysB7 .
