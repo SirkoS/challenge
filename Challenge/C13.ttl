@@ -8,7 +8,7 @@ ex:C13 a iop:Variable ;
     ex:issue "https://github.com/i-adopt/examples/issues/30" ;
     iop:hasConstraint [ a iop:Constraint ;
             rdfs:label "nearest neighbour" ;
-            iop:constrains ex:C13_OoI18_part2 ],
+            iop:constrains ex:C13_OoI18_part2 ] ;
     iop:hasObjectOfInterest ex:C13_OoI18 ;
     iop:hasProperty ex:C13_Prop18 .
 
