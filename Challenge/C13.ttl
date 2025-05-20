@@ -9,9 +9,6 @@ ex:C13 a iop:Variable ;
     iop:hasConstraint [ a iop:Constraint ;
             rdfs:label "nearest neighbour" ;
             iop:constrains ex:C13_OoI18 ],
-        [ a iop:Constraint ;
-            rdfs:label "same type" ;
-            iop:constrains ex:C13_OoI18 ] ;
     iop:hasMatrix ex:C13_Matrix18 ;
     iop:hasObjectOfInterest ex:C13_OoI18 ;
     iop:hasProperty ex:C13_Prop18 .
@@ -22,6 +19,16 @@ ex:C13_Matrix18 a iop:Entity ;
 ex:C13_Prop18 a iop:Property ;
     rdfs:label "distance" .
 
-ex:C13_OoI18 a iop:Entity ;
-    rdfs:label "habitat patch system" .
+ex:C13_OoI18 a iop:Entity,
+            iop:System ;
+    rdfs:label "habitat patch system" ;
+    iop:hasSource ex:C13_OoI18_part1 ;
+    iop:hasTarget ex:C13_OoI18_part2 .
+
+ex:C13_OoI18_part1 a iop:Entity ;
+    rdfs:label "habitat patch" .
+
+ex:C13_OoI18_part2 a iop:Entity ;
+    rdfs:label "habitat patch" .
+
 
