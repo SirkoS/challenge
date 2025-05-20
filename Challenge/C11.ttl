@@ -14,7 +14,7 @@ ex:C11_Matrix14 a iop:Entity ;
     rdfs:label "sedimentary bedrock" .
 
 ex:C11_OoI14 a iop:Entity,
-        iop:System, iop:SymmetricSystem ;
+       iop:SymmetricSystem ;
     rdfs:label "line of intersection" ;
     iop:hasPart ex:C11_OoI_SysA14,
         ex:C11_OoI_SysB14 .
